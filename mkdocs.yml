@@ -1,0 +1,48 @@
+site_name: Learn Dyalog APL
+site_description: Learning resources, samples and tutorials
+docs_dir: docs/
+theme:
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  name: material
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.instant
+    - navigation.indexes
+    - navigation.top
+    - navigation.tabs.sticky
+  plugins:
+    - search:
+        lang: en
+extra_css:
+  - style/main.css
+extra_javascript:
+  - js/announce.js
+markdown_extensions:
+  - abbr
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+

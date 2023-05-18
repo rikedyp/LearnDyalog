@@ -1,0 +1,13 @@
+# How to Do Things
+- web communications and services
+- reading, writing and managing external data
+- full stack
+- external language interfaces
+- GUI
+- data visualisation graphics
+- process management
+- APL system migration
+- Data format conversion e.g. JSON, CSV, datetime, `⎕DR`, decode/encode
+- Neural networks
+	- [Learn APL with Neural Networks]()
+	- <span class="logo-youtube">:fontawesome-brands-youtube:</span> [Implementing the Convolutional Neural Network U-Net in APL](https://dyalog.tv/Dyalog22/?v=LQz1b14YYiI)

@@ -1,13 +1,15 @@
 # Getting started with Dyalog APL
 You do not need to install anything to get started using and learning the APL language.
 
-You can get started with the materials listed here using the [TryAPL online interpreter](https://tryapl.org). 
+You can get started with the [introductory materials listed here](./introductions.md) using the [TryAPL online interpreter](https://tryapl.org). 
 
 ## Quick Start
-If you do decide to install Dyalog, the following instructions should get you up and running with a standard workflow.
+If you do decide to install Dyalog, the following instructions should get you up and running with a basic workflow.
 
 ### Installing Dyalog
 You can [download Dyalog for free](https://www.dyalog.com/download-zone.htm) from the Dyalog website. Also see the [installation instructions for the latest version of Dyalog on all platforms](https://docs.dyalog.com/latest/setup_readme.htm).
+
+For a walkthrough of installing Dyalog and beginning to the development environments, see [Chapter 2 of Mastering Dyalog APL](https://mastering.dyalog.com/Getting-Started.html).
 
 ### Interactive REPL
 
@@ -42,6 +44,11 @@ Linked: # ←→ C:\tmp\MyProject [directory was created]
 ```
 
 Now, when you make a change using the editor (after closing it with <kbd>Esc</kbd>), a file in that folder will be created or updated.
+
+!!!Note
+	Variables and are not saved to a linked folder by default. Use `]add varname` to save the variable `varname` with your code.
+
+	Tacit functions cannot be saved as text source. They must be wrapped in a tradfn or dfn.
 
 For larger applications or complex workflows, you might want to learn about [projects and packages](./application-development/projects-and-packages.md).
 

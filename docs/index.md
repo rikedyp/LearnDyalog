@@ -8,8 +8,8 @@ This site aims to group known documentation and tutorials into categories based 
 	<img style="float:left" src="./img/aplseeds-logo.png"> 
 	<div style="padding:30px 10px 30px 0">APL Seeds: Events aimed at those who are just starting their APL journey.</div>
 
-- Chat in [the APL Orchard](https://chat.stackexchange.com/rooms/52405/the-apl-orchard), a very active chat room
-- Ask a question on [Stack Overflow](https://stackoverflow.com/questions/ask?tags=apl) or the [r/apljk](https://www.reddit.com/r/apljk/) subreddit
+- Chat in [the APL Orchard](https://apl.chat), a very active chat room
+- Ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/apl+or+dyalog) or the [r/apljk](https://www.reddit.com/r/apljk/) subreddit
 - Post in [the Dyalog Forums](https://forums.dyalog.com/)
 
 !!!Info "Dyalog on Social Media"

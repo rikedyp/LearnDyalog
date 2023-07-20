@@ -1,7 +1,7 @@
 # Getting started with Dyalog APL
 You do not need to install anything to get started using and learning the APL language.
 
-You can get started with the [introductory materials listed here](./introductions.md) using the [TryAPL online interpreter](https://tryapl.org). 
+You can get started with the [introductory materials](./introductions.md) using the [TryAPL online interpreter](https://tryapl.org). 
 
 ## Quick Start
 If you do decide to install Dyalog, the following instructions should get you up and running with a basic workflow.
@@ -9,13 +9,11 @@ If you do decide to install Dyalog, the following instructions should get you up
 ### Installing Dyalog
 You can [download Dyalog for free](https://www.dyalog.com/download-zone.htm) from the Dyalog website. Also see the [installation instructions for the latest version of Dyalog on all platforms](https://docs.dyalog.com/latest/setup_readme.htm).
 
-For a walkthrough of installing Dyalog and beginning to the development environments, see [Chapter 2 of Mastering Dyalog APL](https://mastering.dyalog.com/Getting-Started.html).
+For a walkthrough of installing Dyalog and beginning to use the development environments, see [Chapter 2 of Mastering Dyalog APL](https://mastering.dyalog.com/Getting-Started.html).
 
 ### Interactive REPL
 
 *[REPL]: Read Evaluate Print Loop - enter expressions and see their results
-
-<span class="logo-youtube">:fontawesome-brands-youtube:</span> [Editing and Debugging Dyalog APL](https://youtu.be/0CYReeNue6A).
 
 When you start Dyalog, you are met with a blank area with a text cursor. This is the session window. You can input APL expressions (usually indented by 6 spaces) and press enter to see their results:
 
@@ -30,6 +28,8 @@ To create a function you can use: the `⎕ED` system command; double click on a 
 ⎕ED'MyFunction'
 ```
 
+<span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [Editing and Debugging Dyalog APL](https://youtu.be/0CYReeNue6A).
+
 You can now write a tradfn or dfn ([APL Course: User-defined Functions](https://course.dyalog.com/user-defined-functions)) in the editor.
 
 Pressing <kbd>Esc</kbd> will close the editor and save your changes in the active workspace. The active workspace is the currently running set of code - functions and variables etc.
@@ -39,7 +39,7 @@ Pressing <kbd>Esc</kbd> will close the editor and save your changes in the activ
 Create a link between the active workspace and a folder on the file system:
 
 ```APL
-      ]Create # /tmp/MyProject
+      ]LINK.Create # /tmp/MyProject
 Linked: # ←→ C:\tmp\MyProject [directory was created]
 ```
 
@@ -59,8 +59,8 @@ Use `)OFF` to exit Dyalog
 	Your session log will be saved in the location specified by the `LOG_FILE` [configuration parameter](https://course.dyalog.com/Interpreter-internals/#configuration-parameters).
 
 	```
-	]Config LOG_FILE
+	]TOOLS.Config LOG_FILE
 	```
 
 ## Tips
-Check out our [page of tips](./getting-started/tips.md) suggested by users.
+Check out our [page of tips](./tips.md) suggested by users.

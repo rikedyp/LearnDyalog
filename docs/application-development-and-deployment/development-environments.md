@@ -3,7 +3,7 @@ Dyalog's Integrated Development Environments allow you to interactively use APL 
 
 On all platforms, Dyalog includes an Integrated Development Environment (IDE) to enable the interactive use of the APL notation to explore data, discover algorithms and create solutions. Using the IDE, the user can create an application through experimentation and easily diagnose problems, resolve issues and resume work. The IDE provides editors for functions and classes, and a tracer which allows the setting of break points, watch points, and full edit-and-resume capabilities.
 
-The advanced user can enhance the IDE through User Commands. As part of the standard offering, Dyalog provides user commands that can, for example, interface to external source code management systems and search, replace and refactor code in the active workspace or in external code; you can further extend the IDE by implementing your own user commands.
+The advanced user can enhance the IDE through [User Commands](../application-development-and-deployment/user-commands.md). As part of the standard offering, Dyalog provides user commands that can, for example, interface to external source code management systems and search, replace and refactor code in the active workspace or in external code; you can further extend the IDE by implementing your own user commands.
 
 ## Link
 :material-web: [Link User Guide](https://dyalog.github.io/link/)  
@@ -40,12 +40,15 @@ The [RIDE](#remote-ide-ride) is now the recommended IDE for macOS, AIX and Linux
 The original interface to Dyalog is a UNIX (or VT-100) style terminal session. Despite only having a fixed-size screen full of characters, this interface does provide all of the interactive functionality mentioned in the introduction. We continue to provide this interface for use in situations where no GUI is available or where developers prefer the retro look!
 
 ## VSCode extensions
+!!!Warning "These extensions are experimental"
+
 <img style="width:5%; float:right;" src="https://code.visualstudio.com/assets/images/code-stable.png" />
 
-[:material-microsoft-visual-studio-code: APL Language extension](https://marketplace.visualstudio.com/items?itemName=OptimaSystems.vscode-apl-language)  
-[:material-microsoft-visual-studio-code: APL Language Server Client extension](https://marketplace.visualstudio.com/items?itemName=OptimaSystems.vscode-apl-language-client)
+[APL Language extension](https://marketplace.visualstudio.com/items?itemName=OptimaSystems.vscode-apl-language) adds APL syntax highlighting and snippets  
 
-[OptimaSystems](https://optima-systems.co.uk/) maintain VSCode extensions which provide support for Dyalog and the APL language.
+[APL Language Server Client extension](https://marketplace.visualstudio.com/items?itemName=OptimaSystems.vscode-apl-language-client) provides tool tips on primitives and a backtick [prefix keyboard input](../typing-apl/input-methods.md) method.
+
+[VS Code APL Debug](https://github.com/tiamatica/vscode-apl-debug) allows stepping through APL code from VS Code
 
 ## Deploy with Docker containers
 [:fontawesome-brands-youtube: Video: Dyalog's Docker Containers // Morten Kromberg // Dyalog '20](https://dyalog.tv/Dyalog20/?v=DeNkIYRehSs)  

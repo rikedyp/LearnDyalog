@@ -20,10 +20,23 @@ code {
 	}
 }
 
-/* Icon colours */
+/* Icon colours e.g. font awesome */
+.icon-blog { color: rgb(192, 0, 192); }
+.fa-file-pdf { color: #f30f01; }
+.fa-file-archive { color: #F3CF39; }
+.fa-globe { color: #EB7223; } /* If another globe colour needed, how to differentiate? */
+.fa-twitter { color: #1DA1F2; }
+.fa-book { color: #5ed1ff; }
+.fa-file-chm {
+	width: 25px;
+	filter: invert(30%) sepia(14%) saturate(4809%) hue-rotate(237deg) brightness(91%) contrast(88%);
+	/* Convert black to #ef6d7f, see https://codepen.io/sosuke/pen/Pjoqqp */
+}
 .logo-youtube { color: red; }
 .logo-twitter { color: #1da1f2; }
 .logo-mastodon { color: #6364ff; }
+.logo-dyalog { color: #ea7224; }
+.logo-jupyter { color: #f37726; }
 
 /* Custom colors */
 [data-md-color-scheme="default"] {

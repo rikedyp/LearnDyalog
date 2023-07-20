@@ -5,6 +5,9 @@ The book [Mastering Dyalog APL](https://mastering.dyalog.com) by Bernard Legrand
 
 The book was originally published in 2009, and although it is being re-worked as an e-book to include chapters on recent features, the original is still [available as a physical book](https://www.dyalog.com/mastering-dyalog-apl.htm).
 
+!!!Example "New APL Book draft looking for feedback"
+	Long time APL educator Raymond Polivka has drafted a new introductory book aimed at high school students with no prior programming experience. A draft is available as a PDF from [aplclass.com/book](https://aplclass.com/book/).
+
 ## New to APL
 If you are already familiar with a programming language or two, the book [**Learning APL**](https://xpqz.github.io/learnapl) by Stefan Kruger offers an excellent introduction to modern APL for experienced programmers.
 
@@ -12,6 +15,3 @@ If you are already familiar with a programming language or two, the book [**Lear
 Our [APL Course](https://course.dyalog.com) is a set of guided problem sets with examples and explained solutions.
 
 It aims to cover the majority of language constructs and is broader in scope than [**Learning APL**](#new-to-apl), but not as comprehensive as [Mastering Dyalog APL](#new-to-programming).
-
-## Domain-specific tutorials
-<span class="logo-youtube">:fontawesome-brands-youtube:</span> Playlist: [Learn APL with Neural Networks](https://www.youtube.com/watch?v=19YvHLDZEpE&list=PLgTqamKi1MS3p-O0QAgjv5vt4NY5OgpiM)

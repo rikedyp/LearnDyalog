@@ -30,4 +30,6 @@ Dyalog APL's standard UK English layout is as follows:
 └───────┴─────┴──────┴──────────────────────────┴──────┴──────┴─────┴──────┘
 ```
 
-Several international keyboard layouts exist with charts available from [the dfns website](https://dfns.dyalog.com/n_keyboards.htm).
+For Linux distributions that have Dyalog keyboard support included with the distribution, a diagram showing the keyboard layout can be found in the **/usr/share/X11/xkb/symbols/apl** file.
+
+Diagrams showing more keyboard layouts can be found on the [keyboard layout page of the dfns website](https://dfns.dyalog.com/n_keyboards.htm).

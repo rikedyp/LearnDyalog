@@ -32,26 +32,6 @@ Py'n'APL can automatically convert between Python and APL data types, and conver
 
 Call R functions from APL using Rserve.
 
-## Microsoft Office (OLE Client)
-[:fontawesome-solid-file-pdf: Chapter Q, Section 2 of Mastering Dyalog APL](https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf)  
-[:fontawesome-solid-file-pdf: Chapter 9 of the Dyalog for Microsoft Windows Interface Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Microsoft%20Windows%20Interface%20Guide.pdf#page=185)  
-[:fontawesome-solid-file-pdf: Article: Charting the APL/Excel Waters](https://www.dyalog.com/uploads/conference/dyalog11/presentations/C05_using_excel_under_apl/officeauto11.pdf)  
-[:fontawesome-brands-youtube: Dyalog Webinar: APL and Microsoft Excel](https://dyalog.tv/Webinar/?v=hs90SdUc9dE)  
-
-OLE is a Microsoft technology which can be used to interface with Microsoft Office products, including Excel, PowerPoint and Word. The Dyalog OLE bridge is only on Microsoft Windows.
-
-Here is a quick example to open a connection to Excel, create a workbook and add data to it.
-
-```APL
-      XL←⎕NEW'OLEClient'(⊂'ClassName' 'Excel.Application')
-      XL.Visible←1
-      XL.Workbooks.Add⍬
-      XL.ActiveWorkbook.Sheets[1].Name
-Sheet1
-      XL.ActiveWorkbook.Sheets[1].Range[⊂'A1:A5'].Value2←⍪⍳5
-      XL.ActiveWorkbook.Sheets[⊂'Sheet1'].Range[⊂'B1:B5'].Value2←⍪,¨'ABCDE'
-```
-
 ## LAPACK
 [:fontawesome-brands-github: Dyalog/Math](https://github.com/Dyalog/Math)
 
@@ -62,7 +42,9 @@ The `Eigen` function in the `Math` library uses the C library LAPACK (Linear Alg
 
 The `Fourier` function in the `Math` library uses the C library FFTW (Fastest Fourier Transform in the West).
 
-## Compiled libraries interface (`⎕NA`)
+## Compiled libraries (C/C++)
+
+### Compiled functions interface (`⎕NA`)
 The **Name Association** function ⎕NA provides access from APL to compiled functions within a library. 
 
 [:material-web: Online documentation for Name Association ⎕NA](http://help.dyalog.com/latest/#Language/System%20Functions/na.htm)
@@ -77,7 +59,7 @@ A compiled library is a collection of functions typically written in C (or C++) 
 
 Input and output data types must be explicitly declared.
 
-## APL as a Shared Library
+### APL as a Shared Library
 [:fontawesome-solid-file-pdf: APL as a Shared Library](http://docs.dyalog.com/latest/APL%20as%20a%20Shared%20Library.pdf)  
 [:fontawesome-solid-file-pdf: The JSON_APL Shared Object](http://docs.dyalog.com/latest/The%20JSON_APL%20Shared%20Object.pdf)
 

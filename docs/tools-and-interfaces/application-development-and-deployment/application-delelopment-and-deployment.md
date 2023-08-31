@@ -17,11 +17,13 @@ Due to the terse and malleable nature of APL, copying and modifying source code 
 Recently there have been some efforts made to develop general project and package managers for Dyalog APL.
 
 ### Cider & Tatin
+<span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [Dado (Dyalog Development Operations) // Josh David // Dyalog '21](https://dyalog.tv/Dyalog21/?v=AFvfBE19OFg).
+
 <span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [The P words…Projects and Packages](https://dyalog.tv/Dyalog21/?v=AFvfBE19OFg) // Morten Kromberg // Dyalog '22.
 
-<img src="../img/tatin.ico" width="16px" alt="Tatin logo icon" /> [Tatin](https://tatin.dev/) is a package manager for Dyalog APL. You can publish APL projects to the Tatin registry for others to use.
+<img src="../img/tatin.ico" width="16px" alt="Tatin logo icon" /> [Tatin](https://tatin.dev/) is a package manager for Dyalog APL. You can publish APL projects to the Tatin registry for others to use. It is currently under heavy development but there are already packages available to use. It is a convenient way to import useful libraries written in APL, and offers robust dependency management system.
 
-:fontawesome-brands-github: [Cider](https://github.com/aplteam/Cider) is a project manager for Dyalog APL. It provides a framework for organising APL projects and their dependencies, and gives a simple workflow for opening a project in the session.
+:fontawesome-brands-github: [Cider](https://github.com/aplteam/Cider) is a project manager for Dyalog APL. It provides a framework for organising APL projects and their dependencies, and gives a simple workflow for opening projects for development in Dyalog.
 
 ### Dado
 Dado combines the functionality of Cider and Tatin, and has tight integration with GitHub.
@@ -34,8 +36,6 @@ The key functionalities of this DevOps system for Dyalog include:
 - a built-in git workflow
 
 This can all be done with a few simple user command functions, without having to leave the Dyalog session.
-
-<span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [Dado (Dyalog Development Operations) // Josh David // Dyalog '21](https://dyalog.tv/Dyalog21/?v=AFvfBE19OFg).
 
 ## Application deployment
 - [DeliverAPL](https://github.com/mkromberg/deliverapl)

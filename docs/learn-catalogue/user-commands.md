@@ -1,4 +1,6 @@
 # User Commands
+
+## Overview
 <span class="fa-file-pdf">:fontawesome-solid-file-pdf:</span> [User Commands User Guide](http://docs.dyalog.com/latest/User%20Commands%20User%20Guide.pdf)  
 <span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [New User Commands in Dyalog v18.2](https://dyalog.tv/Webinar/?v=A6cNLh52BkI)  
 <span class="logo-youtube">:fontawesome-brands-youtube:</span> Video: [Creating and managing your own User Commands](https://dyalog.tv/Webinar/?v=LWJzRGrOC3k)
@@ -7,6 +9,7 @@ User commands are tools that are available at any time, in any workspace, as ext
 
 New user commands are added periodically; see the end of this page for instructions on installing updates. For additional information on user commands, see the [<span class='fa-file-pdf'>:fontawesome-solid-file-pdf:</span> _User Commands User Guide_](http://docs.dyalog.com/latest/User Commands User Guide.pdf).
 
+## Basic usage
 User commands are invoked in an APL Session by starting an input line with a ] character. For example, the ]Boxing user command enables "boxed" output (and can be used to change other details of the way output is formatted):
 
 ```
@@ -19,6 +22,8 @@ Was OFF
 ```
 
 For a summary of the user command syntax, enter ]Help (Dyalog version 16.0 and earlier) or ] (version 17.0 and later).
+
+## Show available user commands
 
 For a list of the user commands available in your Session, enter ]?.
 
@@ -47,7 +52,7 @@ For example, with Dyalog version 16.0 (in July 2017):
 
 ## Updates to Dyalog-supplied User Commands and to SALT
 
-User commands and SALT are continually improved. So that users can benefit from fixes, zip files are uploaded from time to time containing the latest complete set of SALT and Dyalog-supplied user command files. To update SALT and the Dyalog-supplied user commands in your installation, follow the instructions below.:
+User commands and SALT (todo: what is SALT?) are continually improved. So that users can benefit from fixes, zip files are uploaded from time to time containing the latest complete set of SALT and Dyalog-supplied user command files. To update SALT and the Dyalog-supplied user commands in your installation, follow the instructions below.:
 
 1. Identify the **[DYALOG]** installation directory by entering the following in a Dyalog Session:
     

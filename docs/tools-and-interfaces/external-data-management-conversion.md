@@ -166,6 +166,26 @@ Dyalog's search and replace accept multiple search and replace strings and/or fu
 >Rex, * **** *** *** ** ** ****! ***, Rex, ** *** **** *******
 >```
 
+## Microsoft Office (OLE Client)
+[:fontawesome-solid-file-pdf: Chapter Q, Section 2 of Mastering Dyalog APL](https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf)  
+[:fontawesome-solid-file-pdf: Chapter 9 of the Dyalog for Microsoft Windows Interface Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Microsoft%20Windows%20Interface%20Guide.pdf#page=185)  
+[:fontawesome-solid-file-pdf: Article: Charting the APL/Excel Waters](https://www.dyalog.com/uploads/conference/dyalog11/presentations/C05_using_excel_under_apl/officeauto11.pdf)  
+[:fontawesome-brands-youtube: Dyalog Webinar: APL and Microsoft Excel](https://dyalog.tv/Webinar/?v=hs90SdUc9dE)  
+
+OLE is a Microsoft technology which can be used to interface with Microsoft Office products, including Excel, PowerPoint and Word. The Dyalog OLE bridge is only on Microsoft Windows.
+
+Here is a quick example to open a connection to Excel, create a workbook and add data to it.
+
+```APL
+      XL←⎕NEW'OLEClient'(⊂'ClassName' 'Excel.Application')
+      XL.Visible←1
+      XL.Workbooks.Add⍬
+      XL.ActiveWorkbook.Sheets[1].Name
+Sheet1
+      XL.ActiveWorkbook.Sheets[1].Range[⊂'A1:A5'].Value2←⍪⍳5
+      XL.ActiveWorkbook.Sheets[⊂'Sheet1'].Range[⊂'B1:B5'].Value2←⍪,¨'ABCDE'
+```
+
 ## `⎕MAP`
 [:material-web: `⎕MAP` documentation](http://help.dyalog.com/latest/#Language/System%20Functions/map.htm).
 

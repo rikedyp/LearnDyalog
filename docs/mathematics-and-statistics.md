@@ -1,5 +1,8 @@
 # Mathematics and Statistics
 
+- statistical distributions I-beam and presentations
+- 
+
 ## D07: Rational Arithmetic, Roger Hui (materials, video (30 mins))
 #mathematics #apl-language #language-design
 

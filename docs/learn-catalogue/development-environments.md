@@ -1,19 +1,15 @@
-# Application Development and Deployment
+# Development Environments
 Dyalog's Integrated Development Environments allow you to interactively use APL to develop and debug applications.
 
 On all platforms, Dyalog includes an Integrated Development Environment (IDE) to enable the interactive use of the APL notation to explore data, discover algorithms and create solutions. Using the IDE, the user can create an application through experimentation and easily diagnose problems, resolve issues and resume work. The IDE provides editors for functions and classes, and a tracer which allows the setting of break points, watch points, and full edit-and-resume capabilities.
 
-The advanced user can enhance the IDE through [User Commands](../application-development-and-deployment/user-commands.md). As part of the standard offering, Dyalog provides user commands that can, for example, interface to external source code management systems and search, replace and refactor code in the active workspace or in external code; you can further extend the IDE by implementing your own user commands.
+Users can enhance the IDE through [User Commands](../application-development-and-deployment/user-commands.md). As part of the standard offering, Dyalog provides user commands that can, for example, interface to external source code management systems and search, replace and refactor code in the active workspace or in external code; you can further extend the IDE by implementing your own user commands.
 
-## Link
-:material-web: [Link User Guide](https://dyalog.github.io/link/)  
-:fontawesome-brands-youtube: [Video: Link 3.0 // Morten Kromberg // Dyalog '21](https://dyalog.tv/Dyalog21/?v=K_-E1tnH06k)  
+## Dyalog IDE for Microsoft Windows
+[:fontawesome-solid-file-pdf: Dyalog for Microsoft Windows UI Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Microsoft%20Windows%20UI%20Guide.pdf)  
+[:fontawesome-brands-dyalog: Introductory tutorial - Mastering Dyalog APL Chapter 2](https://mastering.dyalog.com/Getting-Started.html#the-standard-microsoft-windows-interpreter-working-environment)  
 
-Link allows you to use Unicode text files to store APL source code, rather than "traditional" binary workspaces. The benefits of using Link and text files include:
-
-- Changes to your code are immediately written to file: there is no need to remember to save your work. The assumption is that you will make the record permanent with a commit to your source code management system, when the time is right.
-- Unlike binary workspaces, text source can be shared between different versions of APL - or even with human readers or writers who don't have APL installed at all.
-- Source code stored in external files is preserved exactly as typed, rather than being reconstructed from the tokenised form.
+The [RIDE](#remote-ide-ride) is now the recommended IDE for macOS, AIX and Linux users. However, our native Microsoft Windows development environment remains the richest environment for the development of APL applications. Over the years, the Windows IDE has taken advantage of the Windows GUI to provide a Workspace Explorer, integrated search and replace tools, a language bar, tools for debugging GUI applications, an editor for nested arrays and integrated charting of data. Until the RIDE catches up, the classical Windows IDE is expected to remain the tool of choice for pure Windows development.
 
 ## Remote IDE (RIDE)
 [:fontawesome-solid-file-pdf: RIDE User Guide](https://docs.dyalog.com/latest/RIDE%20User%20Guide.pdf)  
@@ -28,16 +24,20 @@ The standalone RIDE comes together with installations of Dyalog for macOS, but m
 
 The RIDE can be used to connect to remote interpreters over a network. The RIDE and connected Dyalog interpreters do not need to be running on the same device or platform.
 
-## Dyalog IDE for Microsoft Windows
-[:fontawesome-solid-file-pdf: Dyalog for Microsoft Windows UI Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Microsoft%20Windows%20UI%20Guide.pdf)  
-[:fontawesome-brands-dyalog: Introductory tutorial - Mastering Dyalog APL Chapter 2](https://mastering.dyalog.com/Getting-Started.html#the-standard-microsoft-windows-interpreter-working-environment)  
-
-The [RIDE](#remote-ide-ride) is now the recommended IDE for macOS, AIX and Linux users. However, our native Microsoft Windows development environment remains the richest environment for the development of APL applications. Over the years, the Windows IDE has taken advantage of the Windows GUI to provide a Workspace Explorer, integrated search and replace tools, a language bar, tools for debugging GUI applications, an editor for nested arrays and integrated charting of data. Until the RIDE catches up, the classical Windows IDE is expected to remain the tool of choice for pure Windows development.
-
 ## Text-based (TTY) IDE
 [:fontawesome-solid-file-pdf: Dyalog for UNIX UI Guide - Driving the Dyalog APL tty version](https://docs.dyalog.com/latest/Dyalog%20for%20UNIX%20UI%20Guide.pdf#page=11)
 
 The original interface to Dyalog is a UNIX (or VT-100) style terminal session. Despite only having a fixed-size screen full of characters, this interface does provide all of the interactive functionality mentioned in the introduction. We continue to provide this interface for use in situations where no GUI is available or where developers prefer the retro look!
+
+## Link
+:material-web: [Link User Guide](https://dyalog.github.io/link/)  
+:fontawesome-brands-youtube: [Video: Link 3.0 // Morten Kromberg // Dyalog '21](https://dyalog.tv/Dyalog21/?v=K_-E1tnH06k)  
+
+Link allows you to use Unicode text files to store APL source code, rather than "traditional" binary workspaces. The benefits of using Link and text files include:
+
+- Changes to your code are immediately written to file: there is no need to remember to save your work. The assumption is that you will make the record permanent with a commit to your source code management system, when the time is right.
+- Unlike binary workspaces, text source can be shared between different versions of APL - or even with human readers or writers who don't have APL installed at all.
+- Source code stored in external files is preserved exactly as typed, rather than being reconstructed from the tokenised form.
 
 ## VSCode extensions
 !!!Warning "These extensions are experimental"

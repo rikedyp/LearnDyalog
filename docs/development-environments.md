@@ -1,6 +1,8 @@
 # Development Environments
 Dyalog's Integrated Development Environments allow you to interactively use APL to develop and debug applications.
 
+<span class="logo-youtube">:fontawesome-brands-youtube:</span> Video series: [Programming Environment Basics](https://www.youtube.com/playlist?list=PLA9gQgjzcpKEPltN7kEifZosjjVsFWVki)
+
 On all platforms, Dyalog includes an Integrated Development Environment (IDE) to enable the interactive use of the APL notation to explore data, discover algorithms and create solutions. Using the IDE, the user can create an application through experimentation and easily diagnose problems, resolve issues and resume work. The IDE provides editors for functions and classes, and a tracer which allows the setting of break points, watch points, and full edit-and-resume capabilities.
 
 Users can enhance the IDE through [User Commands](../application-development-and-deployment/user-commands.md). As part of the standard offering, Dyalog provides user commands that can, for example, interface to external source code management systems and search, replace and refactor code in the active workspace or in external code; you can further extend the IDE by implementing your own user commands.
@@ -24,12 +26,12 @@ The standalone RIDE comes together with installations of Dyalog for macOS, but m
 
 The RIDE can be used to connect to remote interpreters over a network. The RIDE and connected Dyalog interpreters do not need to be running on the same device or platform.
 
-## Text-based (TTY) IDE
+## Terminal-based (TTY) IDE
 [:fontawesome-solid-file-pdf: Dyalog for UNIX UI Guide - Driving the Dyalog APL tty version](https://docs.dyalog.com/latest/Dyalog%20for%20UNIX%20UI%20Guide.pdf#page=11)
 
 The original interface to Dyalog is a UNIX (or VT-100) style terminal session. Despite only having a fixed-size screen full of characters, this interface does provide all of the interactive functionality mentioned in the introduction. We continue to provide this interface for use in situations where no GUI is available or where developers prefer the retro look!
 
-## Link
+## Using External Text Editors
 :material-web: [Link User Guide](https://dyalog.github.io/link/)  
 :fontawesome-brands-youtube: [Video: Link 3.0 // Morten Kromberg // Dyalog '21](https://dyalog.tv/Dyalog21/?v=K_-E1tnH06k)  
 
@@ -84,3 +86,17 @@ Access from RIDE in a web browser:
 ```APL
 docker run -e RIDE_INIT=http:*:8888 -p 8888:8888 dyalog/dyalog
 ```
+
+
+
+### Error handling and debugging
+<span class="logo-dyalog">:fontawesome-brands-dyalog:</span> Tutorial: [Mastering Dyalog APL Chapter 6 - First Aid Kit](https://mastering.dyalog.com/First-Aid-Kit.html)  
+<span class="logo-dyalog">:fontawesome-brands-dyalog:</span> Tutorial: [Mastering Dyaloig APL Chapter M - Event Handling](https://www.dyalog.com/uploads/documents/MasteringDyalogAPL.pdf#page=539)  
+<span class="logo-youtube">:fontawesome-brands-youtube:</span> Video series: [Error Handling in Dyalog](https://www.youtube.com/watch?v=tDK0AKXXRAk&list=PLA9gQgjzcpKF6UAG0EP0-8b1FM88k0GL_)  
+<span class="icon-blog">:material-comment-text:</span> Blog post: [Enhanced Debugging with Function Keys](https://www.dyalog.com/blog/2018/09/enhanced-debugging-with-function-keys/)  
+
+The basic method of debugging is to trace through a function using **Action → Trace** or typing <kbd>Ctrl+Enter</kbd> with the text cursor on the expression you want to trace through. You can then step through multi-line functions one expression at a time.
+
+Learn how to interpret error messages, trace the execution of an application step-by-step, and set break points to help debugging in the [First-Aid Kit chapter of Mastering Dyalog APL](https://mastering.dyalog.com/First-Aid-Kit.html).
+
+
